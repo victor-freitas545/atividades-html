@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: tomato;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+    
+        }
+        .item {
+            background-color: seagreen;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border: solid 1px #fff;
+        }
+        .destaque {
+            grid-column: 1/4;
+        }
+        .destaque2{
+            grid-column: 2/5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo modelo de layout Grid</h1>
+
+    <div class="container">
+        <div class="item destaque">Conteúdo</div>    
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item destaque2">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">Conteúdo</div>
+
+    </div>
+</body>
+</html>

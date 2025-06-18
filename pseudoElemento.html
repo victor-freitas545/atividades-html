@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 400px;
+        }
+        .p-linha::first-line{
+            background-color: tomato;
+            color: seagreen;
+        }
+        .p-letra::first-letter{
+            font-size: 35px;
+        }
+        .p-select::selection{
+            background-color: black;
+            color: gold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Efeitos Pseudo-elementos</h1>
+    <p class="p-linha p-letra p-select">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium animi
+        corrupti perspiciatis voluptatibus
+        saepe! Aperiam temporibus, totam illo, nihil sapiente
+        provident perferendis ut earum consequuntur minus dicta quia modi in.
+    </p>
+</body>
+
+</html>

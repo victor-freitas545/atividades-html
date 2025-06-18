@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: whitesmoke;
+
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 700px;
+       }
+       input{
+        border-radius: 3px;
+        border: 2px solid violet;
+        width: 40%;
+        outline: none;
+        font-size: 15px;
+
+       }
+       .box-user{
+        position: relative;
+        margin-bottom: 5px;
+       }
+       .box-user input{
+        width: 100%;
+        padding: 2px;
+
+       }
+       .box-user label{
+        position:sticky;
+        bottom: 90px;
+       }
+
+       
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h2>Formulário de Cadastro Simples</h2>
+        <div class="box-user">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Ex:Péricles">
+        </div>
+        <br>
+        <div class="box-user">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+        </div>
+        <br>
+        <div class="box-user">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" required placeholder="exemplo@gmail.com">
+        </div>
+        <br>
+
+        <div class="box-user">
+            <label for="telefone">Telefone</label>
+            <input type="number" required placeholder="(DDD) 00000-0000">
+        </div>
+        <br>
+        <div class="box-user">
+            <label for="cpf">CPF</label>
+            <input type="number" required placeholder="000.000.000-00">
+        </div>
+        <br>
+        <div class="box-user">
+            <label for="Sexo">Selecione:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="prefiro nao informar" name="sexo" value="prefiro não informar">
+            <label for="prefiro nao informar">Prefiro não informar </label>
+
+        </div>
+        <br>
+
+        <div class="comment">
+            <label for="comentario">Deixe seu comentário, crítica ou avaliação sobre a empresa:</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"
+                placeholder="Digite o comentário a ser enviado...">
+            </textarea>
+        </div>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
